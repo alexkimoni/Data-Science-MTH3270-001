@@ -152,3 +152,98 @@ b) Apply the functions any( ) and all() to each of the vectors of part a and rep
 > all(Mixed)
 [1] FALSE
 ```
+
+**Problem 2 (Easy):** Which of these kinds of names should be wrapped with quotation marks when used in R?
+> file name
+
+**Problem 4 (Easy):** A user has typed the following commands into the RStudio console:
+```R
+mylist <- list(x1 = "sally", x2 = 42, x3 = FALSE, x4 = 1:5)
+```
+What values do each of the following commands return?
+```R
+> is.list(mylist)
+[1] TRUE
+> names(mylist)
+[1] "x1" "x2" "x3" "x4"
+> length(mylist)
+[1] 4
+> mylist[[2]]
+[1] 42
+> mylist[["x1"]]
+[1] "sally"
+> mylist$x2
+[1] 42
+> length(mylist[["x4"]])
+[1] 5
+> class(mylist)
+[1] "list"
+> typeof(mylist)
+[1] "list"
+> class(mylist[[4]])
+[1] "integer"
+> typeof(mylist[[3]])
+[1] "logical"
+```
+**Problem 9 (Easy):** A user has typed the following commands into the RStudio console.
+```R
+a <- c(10, 15)
+b <- c(TRUE, FALSE)
+c <- c("happy", "sad")
+```
+What do each of the following commands return? Describe the class of the object as well as its value.
+```R
+> data.frame(a, b, c)
+   a     b     c
+1 10  TRUE happy
+2 15 FALSE   sad
+```
+**Class:** "data.frame"  
+**Value:** a 2×3 data frame with columns:  
+- a numeric: c(10, 15)  
+- b logical: c(TRUE, FALSE)  
+- c character: c("happy", "sad")  
+In a data frame, each column can keep its own type (no coercion across columns).
+
+```R
+> cbind(a, b)
+      a b
+[1,] 10 1
+[2,] 15 0
+```
+**Class:** "matrix" (specifically a numeric matrix)
+**Value:** a 2×2 matrix with columns:
+- column a: 10, 15
+- column b: 1, 0
+**Coercion:** logical b is coerced to numeric (TRUE → 1, FALSE → 0) because a matrix must have a single atomic type.
+
+```R
+> rbind(a, b)
+  [,1] [,2]
+a   10   15
+b    1    0
+```
+**Class:** "matrix" (numeric matrix)  
+**Value:** a 2×2 matrix with row names "a" and "b":
+- first row (from a): 10 15
+- second row (from b): 1 0  
+**Coercion:** same as above (logical to numeric) to keep a single type.
+
+```R
+> cbind(a, b, c)
+     a    b       c      
+[1,] "10" "TRUE"  "happy"
+[2,] "15" "FALSE" "sad"  
+> list(a, b, c)[[2]]
+[1]  TRUE FALSE
+```
+**Class:** "matrix" (character matrix)  
+**Value:** a 2×3 character matrix containing "10", "TRUE", "happy", etc.  
+**Coercion:** everything becomes character, because mixing character with other types in a matrix forces character coercion.
+```R
+> list(a, b, c)[[2]]
+[1]  TRUE FALSE
+```
+**Class:** "logical"  
+**Value:** c(TRUE, FALSE)  
+Note: [[2]] extracts the second element itself (not a sublist).
