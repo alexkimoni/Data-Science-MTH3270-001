@@ -234,8 +234,6 @@ b    1    0
      a    b       c      
 [1,] "10" "TRUE"  "happy"
 [2,] "15" "FALSE" "sad"  
-> list(a, b, c)[[2]]
-[1]  TRUE FALSE
 ```
 **Class:** "matrix" (character matrix)  
 **Value:** a 2×3 character matrix containing "10", "TRUE", "happy", etc.  
