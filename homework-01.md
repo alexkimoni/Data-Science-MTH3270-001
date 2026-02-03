@@ -42,7 +42,13 @@ e) Look at the help page for log() by typing: `? log`. Read the first few lines.
 <font color="green">Yes. `log10(1000) = y` and `10^y = 1000`.</font>
 
 **2** Use the following command to create a "character" vector representing a supermarket
-queue with Steve first in line:
+queue with Steve first in line:  
+`queue <- c("Steve", "Russell", "Alison", "Liam")`  
+Write R commands involving square brackets [ ] and the assignment operator <- to update the supermarket queue successively as follows:
+(a) Barry arrives (and gets in the last position of the line).
+(b) Steve is served (so he leaves, and now Russell is first in line).
+(c) Pam arrives and talks her way to the front of the line (with just one item).
+(d) Barry gets impatient and leaves.
 
 
 
