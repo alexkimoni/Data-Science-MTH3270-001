@@ -39,7 +39,7 @@ homework-02**
 [1] 6
 ```
 e) Look at the help page for log() by typing: `? log`. Read the first few lines. Does the text match your observations from the previous question?
-Yes. `log10(1000) = y` and `10^y = 1000`.
+$${\color{green}Yes. `log10(1000) = y` and `10^y = 1000`.Green}$$
 
 **2** Use the following command to create a "character" vector representing a supermarket
 queue with Steve first in line:
