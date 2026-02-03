@@ -39,16 +39,38 @@ homework-02**
 [1] 6
 ```
 e) Look at the help page for log() by typing: `? log`. Read the first few lines. Does the text match your observations from the previous question?
-<font color="green">Yes. `log10(1000) = y` and `10^y = 1000`.</font>
 
-**2** Use the following command to create a "character" vector representing a supermarket
-queue with Steve first in line:  
-`queue <- c("Steve", "Russell", "Alison", "Liam")`  
+<font color="green">Ans: Yes. `log10(1000) = y` and `10^y = 1000`.</font>
+
+**2** Use the following command to create a "character" vector representing a supermarket queue with Steve first in line:
+```R
+queue <- c("Steve", "Russell", "Alison", "Liam")
+```
 Write R commands involving square brackets [ ] and the assignment operator <- to update the supermarket queue successively as follows:
 (a) Barry arrives (and gets in the last position of the line).
+```R
+> queue = c(queue, "Barry")
+> queue     
+[1] "Steve"   "Russell" "Alison"  "Liam"    "Barry" 
+```
 (b) Steve is served (so he leaves, and now Russell is first in line).
+```R
+> queue <- queue[-1]
+> queue
+[1] "Russell" "Alison"  "Liam"    "Barry"
+```
 (c) Pam arrives and talks her way to the front of the line (with just one item).
-(d) Barry gets impatient and leaves.
+```R
+> queue <- c("Pam", queue)
+> queue
+[1] "Pam"     "Russell" "Alison"  "Liam"    "Barry" 
+```
 
+(d) Barry gets impatient and leaves.
+```R
+> queue <- queue[-5]
+> queue
+[1] "Pam"     "Russell" "Alison"  "Liam"
+```
 
 
