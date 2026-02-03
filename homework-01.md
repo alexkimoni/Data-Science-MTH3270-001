@@ -1,7 +1,7 @@
 **Alex Kimoni  
 homework-02**
 
-<p>
+
 **1.** Please answer the following questions
 (a) Try the commands `pi`, `round(pi)`, `round(pi, digits = 4)`, and `trunc(pi)`, `ceiling(pi)`, `floor(pi)`. What are the results?
 ```R
@@ -42,9 +42,9 @@ homework-02**
 e) Look at the help page for log() by typing: `? log`. Read the first few lines. Does the text match your observations from the previous question?
 
 <font color="green">Ans: Yes. `log10(1000) = y` and `10^y = 1000`.</font>
-</p>
 
-<p>
+
+
 **2.** Use the following command to create a "character" vector representing a supermarket queue with Steve first in line:
 ```R
 queue <- c("Steve", "Russell", "Alison", "Liam")
@@ -75,8 +75,8 @@ Write R commands involving square brackets [ ] and the assignment operator <- to
 > queue
 [1] "Pam"     "Russell" "Alison"  "Liam"
 ```
-</p>
-<p>
+
+
  **3.** Create the following objects.
 ```R
 w <- 6
@@ -101,9 +101,9 @@ z <- 9
 > objects()
 character(0)
 ```
-</p>
 
-<p>
+
+
 **4.** R coerces TRUE and FALSE to 1 and 0 in arithmetic expressions, and so summing the elements of a "logical" vector counts the number of TRUEs. Consider the vector:
 ```R
 x <- c(3, 2, 0, 1, 4, 5, 9, 0, 6, 7, 2, 8)
@@ -123,9 +123,9 @@ x <- c(3, 2, 0, 1, 4, 5, 9, 0, 6, 7, 2, 8)
 > sum(x == 0) / length(x == 0)
 [1] 0.1666667
 ```
-</p>
 
-<p>
+
+
 **5.**
 
 (a) Write R commands that create three vectors below and report your R commands.
@@ -160,14 +160,14 @@ b) Apply the functions any( ) and all() to each of the vectors of part a and rep
 > all(Mixed)
 [1] FALSE
 ```
-</p>
 
-<p>
+
+
 **Problem 2 (Easy):** Which of these kinds of names should be wrapped with quotation marks when used in R?
 > file name
-</p>
 
-<p>
+
+
 **Problem 4 (Easy):** A user has typed the following commands into the RStudio console:
 ```R
 mylist <- list(x1 = "sally", x2 = 42, x3 = FALSE, x4 = 1:5)
@@ -197,9 +197,9 @@ What values do each of the following commands return?
 > typeof(mylist[[3]])
 [1] "logical"
 ```
- </p>
+ 
 
- <p>
+ 
 **Problem 9 (Easy):** A user has typed the following commands into the RStudio console.
 ```R
 a <- c(10, 15)
@@ -260,4 +260,4 @@ b    1    0
 **Class:** "logical"  
 **Value:** c(TRUE, FALSE)  
 Note: [[2]] extracts the second element itself (not a sublist).
-</p>
+
