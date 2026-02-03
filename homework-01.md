@@ -1,7 +1,7 @@
 **Alex Kimoni  
 homework-02**
 
-**1** Please answer the following questions
+**1.** Please answer the following questions
 (a) Try the commands `pi`, `round(pi)`, `round(pi, digits = 4)`, and `trunc(pi)`, `ceiling(pi)`, `floor(pi)`. What are the results?
 ```R
 > pi
@@ -42,7 +42,7 @@ e) Look at the help page for log() by typing: `? log`. Read the first few lines.
 
 <font color="green">Ans: Yes. `log10(1000) = y` and `10^y = 1000`.</font>
 
-**2** Use the following command to create a "character" vector representing a supermarket queue with Steve first in line:
+**2.** Use the following command to create a "character" vector representing a supermarket queue with Steve first in line:
 ```R
 queue <- c("Steve", "Russell", "Alison", "Liam")
 ```
@@ -73,7 +73,7 @@ Write R commands involving square brackets [ ] and the assignment operator <- to
 [1] "Pam"     "Russell" "Alison"  "Liam"
 ```
 
-**3** Create the following objects.
+**3.** Create the following objects.
 ```R
 w <- 6
 x <- 7
@@ -98,7 +98,7 @@ z <- 9
 character(0)
 ```
 
-**4** R coerces TRUE and FALSE to 1 and 0 in arithmetic expressions, and so summing the elements of a "logical" vector counts the number of TRUEs. Consider the vector:
+**4.** R coerces TRUE and FALSE to 1 and 0 in arithmetic expressions, and so summing the elements of a "logical" vector counts the number of TRUEs. Consider the vector:
 ```R
 x <- c(3, 2, 0, 1, 4, 5, 9, 0, 6, 7, 2, 8)
 ```
@@ -118,7 +118,8 @@ x <- c(3, 2, 0, 1, 4, 5, 9, 0, 6, 7, 2, 8)
 [1] 0.1666667
 ```
 
-**5**
+**5.**
+
 (a) Write R commands that create three vectors below and report your R commands.
 - `TrueAndMissing` containing values `TRUE` and `NA` (at least one of each in anyorder).
   ```R
