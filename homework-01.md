@@ -1,8 +1,7 @@
 **Alex Kimoni  
 homework-02**
 
-**Question 1**
-Please answer the following questions
+**1** Please answer the following questions
 (a) Try the commands `pi`, `round(pi)`, `round(pi, digits = 4)`, and `trunc(pi)`, `ceiling(pi)`, `floor(pi)`. What are the results?
 ```R
 > pi
@@ -30,11 +29,20 @@ Please answer the following questions
 > 4^3
 [1] 64
 ```
-(d) Try the commands `log10(1000)`, `log(1000)`. Then try the command `log2(64)`.
+(d) Try the commands `log10(1000)`, `log(1000)`. Then try the command `log2(64)`. What are the results? (Make sure you understand the different logarithmic functions.)
+```R
+> log10(1000)
+[1] 3
+> log(1000)
+[1] 6.907755
+> log2(64)
+[1] 6
+```
+e) Look at the help page for log() by typing: `? log`. Read the first few lines. Does the text match your observations from the previous question?
+Yes. `log10(1000) = y` and `10^y = 1000`.
 
-What are the results? (Make sure you understand the different logarithmic functions.)
-e) Look at the help page for log() by typing:
-`? log`
-Read the first few lines. Does the text match your observations from the previous question?
+**2** Use the following command to create a "character" vector representing a supermarket
+queue with Steve first in line:
+
 
 
